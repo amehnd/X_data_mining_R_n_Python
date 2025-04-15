@@ -26,8 +26,8 @@ while True:
         break  
 
     elif response.status_code == 429:
-        print(" Rate limit hit! Waiting 15 minutes before retrying...")
-        time.sleep(15 * 60)  
+        print(" Rate limit hit! Waiting 24 hours before retrying...")
+        time.sleep( 24 * 60 * 60)  
         continue  
 
     else:
