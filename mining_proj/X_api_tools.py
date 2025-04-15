@@ -7,7 +7,7 @@ load_dotenv()
 
 BEARER_TOKEN = os.getenv("BEARER_TOKEN")
 
-url = "https://api.twitter.com/2/users?ids=realDonaldTrump&user.fields=created_at,description,pinned_tweet_id"
+url = "https://api.twitter.com/2/users?ids=realDonaldTrump&user.fields=created_at,description"
 
 headers = {
     "Authorization": f"Bearer {BEARER_TOKEN}"
