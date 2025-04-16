@@ -6,18 +6,15 @@ import time
 load_dotenv()
 
 BEARER_TOKEN = os.getenv("BEARER_TOKEN")
+# print(f"Bearer Token: {BEARER_TOKEN}")
 
-url = "https://api.twitter.com/2/users?ids=realDonaldTrump&user.fields=created_at,description"
+url = "https://api.twitter.com/2/users/by/username/realdonaldtrump?user.fields=created_at,description,most_recent_tweet_id"
 
-headers = {
-    "Authorization": f"Bearer {BEARER_TOKEN}"
-}
-
-response = requests.get(url, headers=headers)
+headers = {"Authorization": f"Bearer {BEARER_TOKEN}"}
 
 while True:
-    response = requests.get(url, headers=headers)
-
+    response = requests.request("GET", url, headers=headers)
+    print(response.text)
     if response.status_code == 200:
         data = response.json()
         with open("twitter_users.json", "w") as f:
