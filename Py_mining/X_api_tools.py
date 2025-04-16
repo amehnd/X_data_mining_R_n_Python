@@ -17,7 +17,7 @@ while True:
     print(response.text)
     if response.status_code == 200:
         data = response.json()
-        with open("twitter_users.json", "w") as f:
+        with open("twitter_users1.json", "w") as f:
             json.dump(data, f, indent=4)
         print("Data saved to twitter_users.json")
         break  
