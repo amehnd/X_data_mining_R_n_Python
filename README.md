@@ -1,4 +1,4 @@
-# 📊 X_data_mining_R_and_Python
+# 📊Data_mining_R_and_Python
 
 Hey there! 👋 This is a personal learning project where I'm exploring **data mining using both R and Python** — mostly focused on **scraping, retrieving, and preparing data** that I plan to use later for training **machine learning models** (also part of my learning journey!).
 
@@ -77,8 +77,7 @@ pip install requests beautifulsoup4 pandas selenium
 1. Clone the repo:
 
 ```bash
-git clone https://github.com/amehnd/X_data_mining_R.git
-cd X_data_mining_R
+git clone https://github.com/amehnd/Data_mining_R_n_Python.git
 ```
 
 2. Choose a script (`.R` or `.py`) and run it in your environment  
